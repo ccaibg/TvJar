@@ -54,7 +54,7 @@ public class Bili extends Spider {
         try {
             JSONArray videos = new JSONArray();
             try {
-                String url = "https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=窗 白噪音";
+                String url = "https://api.bilibili.com/x/web-interface/search/type?search_type=video&keyword=动画片";
                 String content = OkHttpUtil.string(url, null);
                 JSONObject data = new JSONObject(content).getJSONObject("data");
                 JSONArray RArray = data.getJSONArray("result");
